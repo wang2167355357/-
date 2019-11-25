@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>总和</title>
+</head>
+<body>
+    <script>
+        function asd(){
+            var i1 = document.getElementById("i1").value;
+            var i2 = document.getElementById("i2").value;
+            var i3 = document.getElementById("i3").value;
+            var i4 = document.getElementById("i4").value;
+            var i5 = document.getElementById("i5").value;
+            var i6= document.getElementById("i6").value;
+            var sum = parseFloat(i1)+parseFloat(i2)+parseFloat(i3)+parseFloat(i4)+parseFloat(i5)+parseFloat(i6);
+            alert(sum);
+            var pig = document.getElementById('a1');
+            pig.value = sum;
+             var sum = (parseFloat(i1)+parseFloat(i2)+parseFloat(i3)+parseFloat(i4)+parseFloat(i5)+parseFloat(i6))/6;
+        	 var pigs = document.getElementById('a2');
+            pigs.value = sum;
+        }
+    </script>
+        <input  id="i1" type="text">
+        <input  id="i2" type="text">
+        <input  id="i3" type="text">
+        <input  id="i4" type="text">
+        <input  id="i5" type="text">
+        <input  id="i6" type="text">
+        <input type="button" onclick="asd()" value="计算" />
+        总和:<input id="a1" type="text">
+   平均分：<input id="a2" type="text">
+</body>
+<html>

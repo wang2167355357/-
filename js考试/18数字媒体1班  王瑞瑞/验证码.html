@@ -1,0 +1,34 @@
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="a2" value="" />
+		<input type="text" name="a3" id="a3" value="" />
+		<input type="button" id="a4" value="提交"  />
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			while(true){
+				var a1 =Math.floor(Math.random()*10000);
+				if(a1<1000){
+					 break;
+				}
+				a2.value = a1;
+				
+			$("input:nth-of-type(2)").mouseout(function (){
+				var q1 = document.getElementById("a3").value;
+				if(q1 == a1){
+					alert("验证成功");
+				}else{
+					alert("验证失败");
+				}
+			})
+			}
+			
+			
+		</script>
+	</body>
+</html>

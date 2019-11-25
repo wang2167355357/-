@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#a2 {
+			height: 50px;
+			width: 100px;
+			border-radius: 45%;
+			background-color: burlywood;
+			color: chartreuse;
+			text-align: center;
+			line-height: 50px;
+		}
+	</style>
+
+	<body>
+		<span id="a1">
+			点名器
+		</span>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div id="a2" >
+			
+		</div>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var countries = ["孙悟空","沙悟净","猪悟能","陈玄奘","金角大王","银角大王"];
+			
+			$("#a2").mouseover(function(){
+					var index = Math.floor(Math.random()*53);
+					document.getElementById("name").innerHTML = countries[index];
+			},50
+			)
+		</script>
+	</body>
+
+</html>
